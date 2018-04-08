@@ -2,7 +2,7 @@
 all:hello
 
 hello:Driver.o Huffman.o
-	g++ Driver.o Huffman.o -o hello
+	g++ Driver.o Huffman.o -o huffencode
 
 Huffman.o:Huffman.cpp
 	g++ -c Huffman.cpp
@@ -11,6 +11,6 @@ Driver.o:Driver.cpp
 	g++ -c Driver.cpp
 
 run:
-	./hello
+	./huffencode
 clean:
 	rm *.o
